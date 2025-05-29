@@ -1,60 +1,69 @@
-# Exam-Track
-📘 Exam Track – Faculty Exam & Supervision Management System
-🏆 Project Achievement
-I’ve been honored to be part of a 6-member team tasked with designing and developing the frontend for Exam Track, a complete solution to manage exams and supervision at the Faculty of Computer Science, USTHB University.
+# 🎓 Exam Track – Faculty Exam & Supervision Management System
 
-This project stood out among 398 competing entries and proudly won 1st place, receiving an outstanding 19/20 rating. It is now under real consideration for official use by the faculty administration.
+## 🏆 Project Achievement
 
-🎯 Project Purpose
-Exam Track was built to solve the complex and time-consuming process of:
+I’ve been honored to be one of six team members selected to design and develop the **frontend** for **Exam Track**, a powerful system built to manage exams and supervision tasks at the **Faculty of Computer Science – USTHB University**.
 
-Importing and managing exam schedules
+> 🥇 Our project competed against **398 other teams** in a high-level academic competition and **won 1st place** with a remarkable score of **19/20**.
 
-Assigning supervisors efficiently
+This project is currently being considered for **real-world deployment** by the faculty management.
 
-Organizing module and formation data
+---
 
-Tracking workload distribution for teaching staff
+## 🎯 Project Purpose
 
-💻 My Role
-As a UI/UX designer and frontend developer, I contributed to:
+**Exam Track** addresses and automates critical exam-related operations in the faculty:
 
-Designing an intuitive, modern, and responsive interface using Figma
+- 📅 **Import & manage exam schedules**
+- 👨‍🏫 **Assign and organize supervisors**
+- 🧠 **Manage formations, modules, and sections**
+- ⚖️ **Balance teacher workloads fairly and clearly**
 
-Building the user interface using React.js + TypeScript
+---
 
-Implementing core user flows including:
+## 👨‍💻 My Role
 
-Teacher management (add, edit, delete)
+As the team's **UI/UX Designer** and **Frontend Developer**, I worked on:
 
-Exam registration & scheduling
+- 🎨 Designing a clean, modern interface using **Figma**
+- 💻 Building the frontend using **React.js + TypeScript**
+- 🧩 Implementing key components like:
+  - Teacher management (Add / Edit / Delete)
+  - Exam registration & assignment
+  - Dynamic schedule generation
+  - Admin control dashboard
 
-Supervision assignments
+---
 
-Real-time schedule generation
+## ⚙️ Tech Stack
 
-🛠️ Tech Stack
-Frontend: React.js, TypeScript, TailwindCSS
+| Layer       | Tools & Frameworks                              |
+|-------------|--------------------------------------------------|
+| 💻 Frontend | React.js, TypeScript, TailwindCSS, shadcn/ui     |
+| 🎨 Design   | Figma                                             |
+| 🛠 Tools     | Vite, Git, React Icons                           |
 
-Design: Figma
+---
 
-Tools: Git, Vite, React Icons, shadcn/ui
+## 🔑 Key Features
 
-🔥 Key Features
-Easy import of exam schedules
+- 📥 Import and auto-generate exam schedules
+- 👥 Intelligent supervisor assignment
+- 📊 Dashboard for managing academic years, formations, modules
+- 🧭 Intuitive UI with responsive design
+- ✅ Smooth admin workflows to handle exams and supervision
 
-Auto-assignment of supervisors based on availability and load
+---
 
-Management of academic years, formations, sections, and modules
+## 📌 Built For
 
-Admin dashboard for complete exam control
-
-Clean, user-friendly, and accessible design
-
-🎓 Built For
-USTHB – Université des Sciences et de la Technologie Houari Boumediene
-
+**Université des Sciences et de la Technologie Houari Boumediene (USTHB)**  
 Faculty of Computer Science
 
-💬 Final Note
-This project was not just a competition entry—it was a challenge to bring real value to academic administration. I’m proud that our solution may soon be used by the faculty itself, and I’m grateful for the experience, teamwork, and recognition it brought.
+---
+
+## 🙌 Final Thoughts
+
+This project wasn't just about building software—it was about solving real academic problems with teamwork, creativity, and precision. I’m proud to have contributed to a tool that could **help faculty members save time and effort** while maintaining clarity and structure.
+
+---
