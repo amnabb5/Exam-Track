@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+  
+    .addbuttongreen {
+        position: absolute; /* This is required */
+  
+        top: 0.6rem;
+       right: calc(3rem + 5vw); /* Responsive right position */
+
+        display: flex;
+        width: min(10.625rem, 90vw); /* Responsive width */
+        height: 2.9375rem;
+        padding: 0.5rem 0.75rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        flex-shrink: 0;
+border-radius: 0.5rem;
+background: linear-gradient(90deg, #45D699 0.03%, #08B2AC 99.95%);
+color: #FFF;
+font-family: Montserrat;
+font-size: clamp(0.875rem, 2vw, 0.9375rem); /* Responsive font size */
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border: none;
+cursor: pointer;
+transition: all 0.3s ease;
+
+
+  }
+  
+  .addbuttongreen:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+    
+  }
+  
+  .addbuttongreen:active {
+    transform: translateY(-1px);
+  }
+  .add{
+
+    width: clamp(1rem, 2vw, 1.25rem); /* Responsive icon size */
+    height: clamp(0.875rem, 2vw, 1.0625rem);
+    flex-shrink: 0;
+  }
+
+
+
+
+  .addbuttonblue{
+    position: absolute; /* This is required */
+
+    top: 0.6rem;
+   right: min(-3rem, 5vw); /* Responsive right position */
+
+    display: flex;
+    width: min(10.625rem, 90vw); /* Responsive width */
+    height: 2.9375rem;
+    padding: 0.5rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    background: var(--2nd, linear-gradient(90deg, #0B8FAC 0%, #043A46 100%));
+color: #FFF;
+font-family: Montserrat;
+font-size: clamp(0.875rem, 2vw, 0.9375rem); /* Responsive font size */
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border: none;
+cursor: pointer;
+transition: all 0.3s ease;
+
+
+}
+
+.addbuttonblue:hover {
+background-color: #0B8FAC;
+box-shadow: 0px 15px 20px #0B8FAC;
+color: #fff;
+transform: translateY(-7px);
+
+}
+
+.addbuttonblue:active {
+transform: translateY(-1px);
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+  .addbuttongreen {
+    right: calc(8rem + 3vw);
+    width: min(8rem, 85vw);
+  }
+  
+  .addbuttonblue {
+    right: min(0.5rem, 3vw);
+    width: min(8rem, 85vw);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .addbuttongreen {
+    right: calc(6rem + 2vw);
+    width: min(6rem, 80vw);
+  }
+  
+  .addbuttonblue {
+    right: min(0.25rem, 2vw);
+    width: min(6rem, 80vw);
+  }
+}
+/* Add these styles to your addbutton.module.css file */
+
+/* Column list styling for teaching assignments */
+.columnList {
+  margin: 0;
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.8;
+}
+
+.columnList strong {
+  color: #374151;
+  font-weight: 600;
+}
+
+/* Teaching-specific import icon adjustments */
+.importOption svg path {
+  stroke-width: 1.5;
+}
+
+/* Make the modal footer more readable for teaching columns */
+.modalFooter .columnInfo {
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.modalFooter .columnInfo::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modalFooter .columnInfo::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 3px;
+}
+
+.modalFooter .columnInfo::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+.modalFooter .columnInfo::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}

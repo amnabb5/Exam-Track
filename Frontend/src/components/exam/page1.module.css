@@ -1,0 +1,256 @@
+.tableContainer {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.leftActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tableActions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem;
+  padding: 0 1rem;
+}
+
+.printButton {
+  width: 7%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: 500;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.065);
+  transition: all 0.3s;
+  position: absolute;
+  top: 10.5rem;
+  left: 21.5%;
+  gap: 1%;
+  padding: 0.5rem 1rem;
+  background-color: #f7f8f8;
+  color: rgb(2, 1, 1);
+  border-radius: 0.375rem;
+  font-size: 85%;
+}
+
+.printerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 100%;
+}
+
+.printerContainer {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.printerContainer svg {
+  width: 100%;
+  height: auto;
+  transform: translateY(4px);
+}
+
+.printerPageWrapper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.printerPage {
+  width: 70%;
+  height: 10px;
+  border: 1px solid black;
+  background-color: white;
+  transform: translateY(0px);
+  transition: all 0.3s;
+  transform-origin: top;
+}
+
+.printButton:hover .printerPage {
+  height: 16px;
+  background-color: rgb(239, 239, 239);
+}
+
+.printButton:hover {
+  background-color: rgb(239, 239, 239);
+}
+
+/* Print styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  
+  table, table * {
+    visibility: visible;
+  }
+  
+  table {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #2980b9 !important;
+    color: white !important;
+    font-weight: bold !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  @page {
+    size: landscape;
+    margin: 1.5cm;
+  }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .tableContainer {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 10px 0;
+  }
+
+  .printButton {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .modalContainer {
+    width: 90%;
+    max-width: none;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .modalContent {
+    padding: 10px;
+  }
+
+  .heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .formGroup {
+    margin-bottom: 15px;
+  }
+
+  .formLabel {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .formInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+.loadingBanner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loadingBanner p {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.loadingBanner p::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 
