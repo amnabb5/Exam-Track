@@ -4,7 +4,7 @@
 
 I’ve been honored to be one of six team members selected to design and develop the **frontend** for **Exam Track**, a powerful system built to manage exams and supervision tasks at the **Faculty of Computer Science – USTHB University**.
 
-> 🥇 Our project competed against **398 other teams** in a high-level academic competition and **won 1st place** with a remarkable score of **19/20**.
+> 🥇 Our project competed against **398 other participants** in a high-level academic competition and **won 1st place** with a remarkable score of **19/20**.
 
 This project is currently being considered for **real-world deployment** by the faculty management.
 
